@@ -10,3 +10,5 @@ async function getUser() {
 }
 
 getUser();
+
+//Todo esto viene a ser el findOne
