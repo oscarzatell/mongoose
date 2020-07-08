@@ -13,4 +13,6 @@ async function main() {
   return productSave;
 }
 
-main();
+main()
+  .then((productSave) => console.log(productSave))
+  .catch((err) => console.log(err));
