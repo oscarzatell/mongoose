@@ -11,7 +11,8 @@ mongoose
   .catch((err) => console.log(err));
 
 //Decirme cuando la base de datos ha sido conectada
-db.on("open", (_) => {
+//.once es para escuchar este evento una vez
+db.once("open", (_) => {
   console.log("Base de datos conectada a", uri);
 });
 //Decirme cuando hay un error a la conexion de bd
