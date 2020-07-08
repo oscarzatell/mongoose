@@ -10,4 +10,10 @@ const product = new Product({
   price: 1300.99,
 });
 
+//Esto me puede devolver un error o un documento
+product.save((err, document) => {
+  if (err) console.log(err);
+  console.log(document);
+});
+
 console.log(product);
