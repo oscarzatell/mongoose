@@ -13,3 +13,6 @@ const userSchema = new Schema({
     default: new Date(),
   },
 });
+
+//Aqui hacemos el export
+module.exports = model("user", userSchema);

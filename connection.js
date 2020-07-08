@@ -6,6 +6,7 @@ mongoose
   .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   })
   //En la siguiente linea le decimos que cuando nos de un error nos lo muestre por consola
   .catch((err) => console.log(err));
